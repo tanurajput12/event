@@ -4,7 +4,7 @@ const App=()=>{
     return(
         <>
 
-        <h1> this is the  App</h1>
+
         <Layout/>
         </>
 

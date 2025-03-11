@@ -62,4 +62,86 @@
       width: 100%; /* 1 card per row on very small screens (phones) */
     }
   }
+ /* General Navbar Styling */
+.navbar {
+  padding: 1rem 2rem; /* Spacing around the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-light {
+  background-color: #f8f9fa; /* Light background for the navbar */
+}
+
+.navbar-brand {
+  font-family: 'Arial', sans-serif; /* Font style for the brand */
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff; /* Brand color */
+  text-transform: uppercase; /* Uppercase letters */
+}
+
+.navbar-toggler-icon {
+  background-color: #007bff; /* Color for the toggle icon */
+}
+
+/* Navbar Links */
+.nav-item .nav-link {
+  color: #333; /* Dark text color */
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-item .nav-link:hover {
+  color: #007bff; /* Change color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Active Link */
+.nav-item .nav-link.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Disabled link style */
+.nav-item .nav-link[aria-disabled="true"] {
+  color: #6c757d; /* Grey color for disabled links */
+  pointer-events: none; /* Disable clicking */
+}
+
+/* Navbar Collapse Styles for Small Screens */
+@media (max-width: 991px) {
+  .navbar-collapse {
+      background-color: #f8f9fa; /* Light background for the collapsed menu */
+  }
+  .navbar-nav {
+      flex-direction: column; /* Vertical layout for smaller screens */
+  }
+  .navbar-nav .nav-item {
+      margin-bottom: 1rem; /* Space between links */
+  }
+}
+
+
+/* Footer Styling */
+.footer {
+  position: fixed; /* Fix the footer at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #343a40; /* Dark background */
+  color: white; /* Text color */
+  text-align: center; /* Center align text */
+  padding: 1rem 0; /* Padding for top and bottom */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+  z-index: 9999; /* Make sure it stays on top */
+}
+
+/* Optional: Add some space at the bottom of the page content to prevent overlap */
+body {
+  padding-bottom: 80px; /* Adjust based on your footer height */
+}
+
   
