@@ -1,0 +1,65 @@
+/* Main container for cards */
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap; /* This allows the cards to wrap onto the next line if there are more */
+    gap: 20px; /* Adds space between each card */
+    justify-content: space-between; /* Ensures that the cards are spaced out evenly */
+    padding: 20px;
+  }
+  
+  /* Individual card styling */
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 20px); /* Each card takes up 25% of the container width (4 cards per row) */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Centers the content inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    box-sizing: border-box; /* Ensures padding and margins do not affect the width */
+  }
+  
+  .card img {
+    max-width: 100%; /* Ensures the image fits well inside the card */
+    border-radius: 5px; /* Optional: Adds a border-radius to the image */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Hover effect to make the card interactive */
+  .card:hover {
+    transform: translateY(-10px); /* Moves the card up slightly on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Increases the shadow for hover effect */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .card {
+      width: calc(33.33% - 20px); /* 3 cards per row on medium screens (tablets) */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px); /* 2 cards per row on small screens (phones) */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%; /* 1 card per row on very small screens (phones) */
+    }
+  }
+  
