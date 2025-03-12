@@ -144,4 +144,37 @@ body {
   padding-bottom: 80px; /* Adjust based on your footer height */
 }
 
+.card-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9f2f5; /* Light background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  
+}
+
+
   
