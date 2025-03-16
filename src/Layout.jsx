@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';  
 import Home from './Home';  
 import Dashboard from './Dashboard'; 
+import Ticket from './Ticket';
 
 const Layout = () => {
   return (
@@ -15,6 +16,8 @@ const Layout = () => {
         <Route path="/" element={<Home />} /> 
         <Route path="/dashboard" element={<Dashboard />} /> 
         <Route path="/home" element={<Home/>} />
+        <Route path="/ticket" element={<Ticket/>} />
+       
 
       </Routes>
 
